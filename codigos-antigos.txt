@@ -92,3 +92,16 @@ CODIGO DE PHP QUE NAO FUNCIONOU PRA ENVIAR Email
     }
 
 ?>
+
+
+        <p>Olá, me chamo Felipe, sou um adolescente de 16 anos que no meio de 2023 conheceu o mundo da programação. Fiquei impressionado com tudo que podia ser feito com a programação, me interessei bastante e comecei pelo HTML5 e CSS3 no Curso em Vídeo. Nesse período, fiquei sem computador, pois meu notebook infelizmente quebrou. Era um notebook muito velho que não valia a pena consertar.</p>
+        <p>Desde fevereiro de 2024, retornei às atividades com um novo PC. Confesso que desde então enrolei um pouco no meu percurso kkkkk, mas agora estou totalmente focado e com muita vontade de aprender. Pretendo seguir minha carreira como um desenvolvedor Full Stack, trabalhando com diversas linguagens de programação.</p>
+        
+        <h2>Meus Objetivos</h2>
+        <p>Em curto prazo, meu objetivo é dominar HTML5, CSS3 e JavaScript, e começar a trabalhar em projetos práticos para ganhar experiência. Estou determinado a construir uma sólida base de conhecimentos antes de avançar para tecnologias mais complexas.</p>
+        
+        <h2>Projetos e Aprendizados</h2>
+        <p>Atualmente, estou desenvolvendo um site pessoal para praticar minhas habilidades em HTML e CSS. Também planejo criar pequenos projetos, como um jogo da velha em JavaScript, para aplicar o que aprendi de forma prática.</p>
+        
+        <h2>Motivações e Inspirações</h2>
+        <p>O que mais me motiva na programação é a possibilidade de criar soluções inovadoras que podem impactar positivamente a vida das pessoas. Sou inspirado por grandes desenvolvedores que começaram do zero e hoje são referências na área.</p>
