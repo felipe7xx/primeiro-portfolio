@@ -1,0 +1,94 @@
+FORMULARIO QUE EU TIREI, TENTE COLOCAR ELE DEPOIS COM TODAS AS FUNÇÕES
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+
+                <form method="post" action="email.php">
+                    <input type="text" name="nome" id="" placeholder="Seu Nome:" required>
+                    <input type="text" name="email" id="" placeholder="Seu Email:" required>
+                    <input type="text" name="telefone" id="" placeholder="Seu Telefone:">
+                    <textarea name="" id="" placeholder="Sua Mensagem:" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+
+
+        ESTILO DO FORMULARIO
+
+        /* ESTILO DO FORMULARIO */
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form input::placeholder{
+    color: #fff;
+}
+
+form textarea::placeholder{
+    color: #fff;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: blue;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+CODIGO DE PHP QUE NAO FUNCIONOU PRA ENVIAR Email
+
+<?php
+
+    $nome = addcslashes($_POST['nome']);
+    $email = addcslashes($_POST['email']);
+    $telefone = addcslashes($_POST['telefone']);
+
+    $para = "contatofelipe7xx@gmail.com";
+    $assunto = "Email para contatos";
+
+    $corpo = "Nome: ".$nome."\n"."E-mail: ".$email."\n"."Telefone: ".$telefone;
+
+    $cabeca = "From redevortex5@gmail.com"."\n"."Reply-to: ".$email."\n"."X=Mailer:PHP/".phpversion();
+
+    if(mail($para,$assunto,$corpo,$cabeca)){
+        echo("E-mail enviado com sucesso!");
+    }else{
+        echo("Houve um erro ao enviar o email");
+    }
+
+?>
